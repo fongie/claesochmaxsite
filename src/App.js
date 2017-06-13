@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import {SectionsContainer, Section} from 'react-fullpage';
-import AboutPage from './AboutPage';
-import MediaPage from './MediaPage';
-import HeaderPage from './HeaderPage';
+import AboutPage from './AboutPage/AboutPage';
+import MediaPage from './MediaPage/MediaPage';
+import HeaderPage from './HeaderPage/HeaderPage';
 
 const styles = {
     width: '100%',
@@ -20,10 +20,10 @@ class App extends Component {
         return (
             <div className="container-fluid" style={{...styles}}>
                 <SectionsContainer {...fullpageOptions}>
-                    <Section color="#A7D8D8">
+                    <Section>
                         <HeaderPage />
                     </Section>
-                    <Section color="#E0E4CC">
+                    <Section color="#DCE4F2">
                         <AboutPage />
                     </Section> 
                     <Section color="#E0E4CC">

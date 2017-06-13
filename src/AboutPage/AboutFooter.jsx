@@ -6,15 +6,15 @@ const propTypes = {
 };
 const defaultProps = {
 };
-class HeaderPage extends Component {
+class AboutFooter extends Component {
     render() {
         return (
-            <p>headerpage</p>
+            <p>footer</p>
         );
     }
 }
 
-HeaderPage.propTypes = propTypes;
-HeaderPage.defaultProps = defaultProps;
+AboutFooter.propTypes = propTypes;
+AboutFooter.defaultProps = defaultProps;
 
-export default HeaderPage;
+export default AboutFooter;

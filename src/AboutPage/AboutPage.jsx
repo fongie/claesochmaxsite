@@ -1,6 +1,8 @@
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import AboutHeader from './AboutHeader';
+import AboutContent from './AboutContent';
+import AboutFooter from './AboutFooter';
 
 const propTypes = {
 };
@@ -9,7 +11,11 @@ const defaultProps = {
 class AboutPage extends Component {
     render() {
         return (
-            <p>about</p>
+            <div>
+            <AboutHeader />
+            <AboutContent />
+            <AboutFooter />
+        </div>
         );
 
     }
