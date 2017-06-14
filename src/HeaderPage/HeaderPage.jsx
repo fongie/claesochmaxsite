@@ -10,7 +10,7 @@ const defaultProps = {
 const styles = {
     height: '100vh',
     background: `url(${img}) no-repeat center center fixed`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
 };
 
 class HeaderPage extends Component {

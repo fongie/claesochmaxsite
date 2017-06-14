@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Col, Well } from 'react-bootstrap';
 
 const propTypes = {
 };
@@ -17,9 +17,11 @@ const aboutInfo = {
 const AboutContent = () => {
         return (
             <div>
+                <div style={{paddingLeft: '50px', paddingRight: '50px'}}>
                 <Jumbotron>
                     {aboutInfo.aboutText.map((item, i) => <p key={i}>{item}</p>)}
                 </Jumbotron>
+            </div>
             </div>
         );
     }

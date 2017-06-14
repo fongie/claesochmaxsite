@@ -10,6 +10,10 @@ const propTypes = {
 };
 const defaultProps = {
 };
+const styles = {
+    fontFamily: 'Alegreya Sans SC',
+    textAlign: 'justify',
+};
 class AboutPage extends Component {
     constructor(props) {
         super(props);
@@ -27,7 +31,7 @@ class AboutPage extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{...styles}}>
                 <Grid>
                     <div style={{height: '95vh'}}>
                         <Row>
@@ -40,12 +44,16 @@ class AboutPage extends Component {
                         </Row>
                         <Row>
                             <Col xs={6} xsOffset={3}>
-                                <Button block onClick={this.toggleFooter}>Kontakt</Button>
-                                <Collapse in={this.state.showingFooter}>
+                                <Collapse in = {!this.state.showingFooter}>
                                     <div>
-                                        <ContactPanel onclick={this.toggleFooter} />
+                                        <Col xs={4} xsOffset={4}>
+                                            <Button block onClick={this.toggleFooter}>Kontakt</Button>
+                                        </Col>
                                     </div>
                                 </Collapse>
+                                <div>
+                                    <ContactPanel expandsOn={this.state.showingFooter} onclick={this.toggleFooter} />
+                                </div>
                             </Col>
                         </Row>
                     </div>

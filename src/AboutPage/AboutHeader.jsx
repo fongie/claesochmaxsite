@@ -6,11 +6,16 @@ const propTypes = {
 };
 const defaultProps = {
 };
+const styles = {
+    fontFamily: 'Rock Salt',
+    textAlign: 'center',
+
+};
 const AboutHeader = () => {
     return (
-        <div>
+        <div style={{...styles}}>
             <PageHeader>
-                <p>Claes&Max</p>
+                <p style={{fontSize: '90px'}}>Claes&Max</p>
                 <small>street musicians for hire</small>
             </PageHeader>
         </div>

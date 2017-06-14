@@ -11,8 +11,8 @@ const defaultProps = {
 class ContactPanel extends Component {
     render() {
         return (
-            <Panel onClick={this.props.onclick}>
-                <p>Kontakta oss via mail: info@claesochmax.se</p>
+            <Panel collapsible expanded={this.props.expandsOn} onClick={this.props.onclick} style={{margin: '-20px'}}>
+                <p style={{textAlign: 'center', fontSize: '20px'}}>Kontakta oss via mail: info@claesochmax.se</p>
             </Panel>
         );
 

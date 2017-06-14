@@ -8,3 +8,9 @@
     background-position: center center;
     background-size: cover;
 }
+.media-section {
+    background-image: url(./MediaPage/mediabg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

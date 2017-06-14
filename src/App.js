@@ -20,6 +20,7 @@ class App extends Component {
             navigation: true,
             sectionPaddingTop: '0',
             sectionPaddingBottom: '0',
+            verticalAlign: true,
         };
         return (
             <div className="container" style={{...styles}}>
@@ -30,7 +31,7 @@ class App extends Component {
                     <Section className="about-section">
                         <AboutPage />
                     </Section> 
-                    <Section>
+                    <Section className="media-section">
                         <MediaPage />
                     </Section> 
                 </SectionsContainer>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ResponsiveEmbed } from 'react-bootstrap';
+import { ResponsiveEmbed, Grid, Row, Col } from 'react-bootstrap';
 
 const propTypes = {
 };
@@ -10,12 +10,11 @@ class MediaPage extends Component {
     render() {
         return (
             <div>
-                <div style={{width:'100%',height: 'auto'}}>
+                <Col xs={10} xsOffset={1}>
                     <ResponsiveEmbed a16by9>
-                        <iframe title="vid" className="embed-responsive-item" src="https://www.youtube.com/embed/bWZuaWfHRAc"></iframe>
+                        <iframe title="vid" src="https://www.youtube.com/embed/bWZuaWfHRAc"></iframe>
                     </ResponsiveEmbed>
-
-                </div>
+                </Col>
             </div>
         );
     }
