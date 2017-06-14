@@ -6,6 +6,7 @@ import MediaPage from './MediaPage/MediaPage';
 import HeaderPage from './HeaderPage/HeaderPage';
 
 const styles = {
+    textAlign: 'center',
     width: '100%',
     padding: '0',
 };
