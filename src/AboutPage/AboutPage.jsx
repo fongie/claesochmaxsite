@@ -4,7 +4,7 @@ import AboutHeader from './AboutHeader';
 import AboutContent from './AboutContent';
 import ContactPanel from './ContactPanel';
 import CopyrightLink from './CopyrightLink';
-import { Grid, Row, Col, Button } from 'react-bootstrap';
+import {Collapse, Grid, Row, Col, Button } from 'react-bootstrap';
 
 const propTypes = {
 };
@@ -41,7 +41,11 @@ class AboutPage extends Component {
                         <Row>
                             <Col xs={6} xsOffset={3}>
                                 <Button block onClick={this.toggleFooter}>Kontakt</Button>
-                                {this.state.showingFooter ? <ContactPanel onclick={this.toggleFooter} /> : null} 
+                                <Collapse in={this.state.showingFooter}>
+                                    <div>
+                                        <ContactPanel onclick={this.toggleFooter} />
+                                    </div>
+                                </Collapse>
                             </Col>
                         </Row>
                     </div>
