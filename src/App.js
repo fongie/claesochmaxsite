@@ -5,6 +5,7 @@ import AboutPage from './AboutPage/AboutPage';
 import MediaPage from './MediaPage/MediaPage';
 import HeaderPage from './HeaderPage/HeaderPage';
 
+
 const styles = {
     textAlign: 'center',
     width: '100%',
@@ -17,17 +18,19 @@ class App extends Component {
             anchors: ['header', 'about', 'media'],
             scrollBar: false,
             navigation: true,
+            sectionPaddingTop: '0',
+            sectionPaddingBottom: '0',
         };
         return (
-            <div className="container-fluid" style={{...styles}}>
+            <div className="container" style={{...styles}}>
                 <SectionsContainer {...fullpageOptions}>
                     <Section>
                         <HeaderPage />
                     </Section>
-                    <Section color="#DCE4F2">
+                    <Section className="about-section">
                         <AboutPage />
                     </Section> 
-                    <Section color="#E0E4CC">
+                    <Section>
                         <MediaPage />
                     </Section> 
                 </SectionsContainer>

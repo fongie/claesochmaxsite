@@ -34,7 +34,7 @@ class AboutPage extends Component {
                             <AboutHeader />
                         </Row>
                         <Row>
-                            <Col sm={10} smOffset={1}>
+                            <Col sm={8} smOffset={2}>
                                 <AboutContent />
                             </Col>
                         </Row>

@@ -7,11 +7,16 @@ const propTypes = {
 };
 const defaultProps = {
 };
+const styles = {
+    height: '100vh',
+    background: `url(${img}) no-repeat center center fixed`,
+    backgroundSize: 'cover'
+};
+
 class HeaderPage extends Component {
     render() {
         return (
-            <div>
-                <Image src={img} style={{width: '100%'}} />
+            <div style={{...styles}}>
             </div>
         );
     }

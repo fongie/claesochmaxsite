@@ -2,3 +2,9 @@
   text-align: center;
 }
 
+.about-section {
+    background-image: url(./AboutPage/aboutbgimage.png); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
