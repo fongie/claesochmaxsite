@@ -1,16 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { ResponsiveEmbed, Grid, Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { ResponsiveEmbed, Col } from 'react-bootstrap';
 
-const propTypes = {
-};
-const defaultProps = {
-};
-class MediaPage extends Component {
-    render() {
+const MediaPage = () => {
         return (
             <div>
-                <Col xs={10} xsOffset={1}>
+                <Col sm={10} smOffset={1}>
                     <ResponsiveEmbed a16by9>
                         <iframe title="vid" src="https://www.youtube.com/embed/bWZuaWfHRAc"></iframe>
                     </ResponsiveEmbed>
@@ -18,9 +12,5 @@ class MediaPage extends Component {
             </div>
         );
     }
-}
-
-MediaPage.propTypes = propTypes;
-MediaPage.defaultProps = defaultProps;
 
 export default MediaPage;

@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import AboutHeader from './AboutHeader';
 import AboutContent from './AboutContent';
 import ContactPanel from './ContactPanel';
 import CopyrightLink from './CopyrightLink';
 import {Collapse, Grid, Row, Col, Button } from 'react-bootstrap';
 
-const propTypes = {
-};
-const defaultProps = {
-};
 const styles = {
     fontFamily: 'Alegreya Sans SC',
     textAlign: 'justify',
@@ -38,12 +33,12 @@ class AboutPage extends Component {
                             <AboutHeader />
                         </Row>
                         <Row>
-                            <Col sm={8} smOffset={2}>
+                            <Col xs={12} md={10} mdOffset={1} lg={8} lgOffset={2}>
                                 <AboutContent />
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={6} xsOffset={3}>
+                            <Col sm={6} smOffset={3} md={4} mdOffset={4}>
                                 <Collapse in = {!this.state.showingFooter}>
                                     <div>
                                         <Col xs={4} xsOffset={4}>
@@ -66,8 +61,5 @@ class AboutPage extends Component {
 
     }
 }
-
-AboutPage.propTypes = propTypes;
-AboutPage.defaultProps = defaultProps;
 
 export default AboutPage;

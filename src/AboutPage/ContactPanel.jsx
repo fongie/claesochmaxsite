@@ -4,6 +4,7 @@ import { Panel } from 'react-bootstrap';
 
 const propTypes = {
     onclick: PropTypes.func,
+    expandsOn: PropTypes.bool.isRequired
 };
 const defaultProps = {
     onclick: null
@@ -12,7 +13,7 @@ class ContactPanel extends Component {
     render() {
         return (
             <Panel collapsible expanded={this.props.expandsOn} onClick={this.props.onclick} style={{margin: '-20px'}}>
-                <p style={{textAlign: 'center', fontSize: '20px'}}>Kontakta oss via mail: info@claesochmax.se</p>
+                <p style={{textAlign: 'center', fontSize: '18px'}}>Kontakta oss via mail: info@claesochmax.se</p>
             </Panel>
         );
 

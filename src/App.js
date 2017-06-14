@@ -5,7 +5,8 @@ import AboutPage from './AboutPage/AboutPage';
 import MediaPage from './MediaPage/MediaPage';
 import HeaderPage from './HeaderPage/HeaderPage';
 
-
+/* Note that there is additional styling concerning the background images for about-section and media-section in App.css while HeaderPage has the style inline
+*/
 const styles = {
     textAlign: 'center',
     width: '100%',
