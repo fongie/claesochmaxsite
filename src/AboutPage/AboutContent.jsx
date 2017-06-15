@@ -9,10 +9,10 @@ const aboutInfo = {
     ]
 }
 
-const AboutContent = () => {
+const AboutContent = (props) => {
         return (
             <div>
-                <div style={{paddingLeft: '50px', paddingRight: '50px'}}>
+                <div style={props.isMobile ? {} : {paddingLeft: '50px', paddingRight: '50px'}}>
                 <Jumbotron>
                     {aboutInfo.aboutText.map((item, i) => <p key={i}>{item}</p>)}
                 </Jumbotron>

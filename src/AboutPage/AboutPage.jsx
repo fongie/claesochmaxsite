@@ -30,11 +30,11 @@ class AboutPage extends Component {
                 <Grid>
                     <div style={{height: '95vh'}}>
                         <Row>
-                            <AboutHeader />
+                            <AboutHeader isMobile={this.props.isMobile} />
                         </Row>
                         <Row>
                             <Col xs={12} md={10} mdOffset={1} lg={8} lgOffset={2}>
-                                <AboutContent />
+                                <AboutContent isMobile={this.props.isMobile} />
                             </Col>
                         </Row>
                         <Row>
